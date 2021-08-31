@@ -1,7 +1,7 @@
 # Favorites
 
-Insert the purpose of this project and some interesting infos here
+Static UI5 app for developer favorites.
 
-## Credits
+## Usage
 
-This project has been generated with 💙 and [easy-ui5](https://github.com/SAP)
+Add your favorite links to the model/favorites.json file.
