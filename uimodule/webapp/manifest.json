@@ -8,7 +8,13 @@
       "version": "1.0.0"
     },
     "title": "{{appTitle}}",
-    "description": "{{appDescription}}"
+    "description": "{{appDescription}}",
+    "dataSources": {
+      "favorites_ds": {
+        "uri": "model/favorites.json",
+        "type": "JSON"
+      }
+    }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -52,6 +58,14 @@
         "settings": {
           "bundleName": "com.otisoft.favs.Favorites.i18n.i18n"
         }
+      },
+      "favorites": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "favorites_ds",
+        "preload": true,
+        "settings": {
+          "defaultBindingMode": "OneTime"
+        }
       }
     },
     "resources": {
@@ -74,7 +88,9 @@
         {
           "name": "RouteMainView",
           "pattern": "RouteMainView",
-          "target": ["TargetMainView"]
+          "target": [
+            "TargetMainView"
+          ]
         }
       ],
       "targets": {
