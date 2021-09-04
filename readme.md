@@ -1,6 +1,6 @@
 # Favorites
 
-Static UI5 app for developer favorites.
+Static UI5 app for developer favorites. Implemented in VSCode using easy-ui5 yeoman generator templates.
 
 ## Usage
 
